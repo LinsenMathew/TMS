@@ -1,0 +1,25 @@
+USE [TMS]
+GO
+
+/****** Object:  Table [dbo].[DriverDetails]    Script Date: 14-01-2019 02:36:23 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DriverDetails](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[FirstName] [varchar](50) NOT NULL,
+	[LastName] [varchar](50) NOT NULL,
+	[Dob] [date] NOT NULL,
+	[Email] [varchar](100) NOT NULL,
+	[ProfilePhotoUrl] [varchar](255) NOT NULL,
+	[DriverLicenceFrontUrl] [varchar](255) NOT NULL,
+ CONSTRAINT [PK_DriverDetails] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
